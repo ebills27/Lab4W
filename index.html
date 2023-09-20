@@ -6,9 +6,11 @@
 </head>
 <body>
 <h1>Volunteer Form</h1>
-<legend>Information</legend>
+<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+  <fieldset>
+    <legend>My Info</legend>
 <div>
-  <label>first name<input size="90" type="text" name  "first_name_field"></label>
+  <label>first name<input size="90" type="text" name "first_name_field"></label>
   <label>last name<input size="90" type="text" name "last_name_field"></label>
   <label>phone<input size="90" type="text" name "phone_field"></label>
   <label>email <input size="90" type="text" name "email_field"></label>
@@ -21,9 +23,12 @@
 </div>
 <div>Age: </div>
    <select name="age_field">
-   <option>under 18</option>
-   <option>over 18</option>
-</select>
+   <option>18 and up</option>
+   <option>17 and under</option>
+   <option> 
+   </select>
+ </fieldset> 
+ 
     <fieldset>
       <legend>My Availability</legend>
       <h3>Days Available:</h3>
@@ -36,8 +41,11 @@
         <div><label>Friday <input type="checkbox" name="available_field[]" value="friday"></label></div>
         <div><label>Saturday <input type="checkbox" name="available_field[]" value="saturday"></label></div>
         <h3>Comments</h3>
+        <textarea name="comments_field"></textarea>
       </div>
     </fieldset>
-</form>
-</body>
-</html>
+    <input type="hidden" name="hidden_field" value="dkriegls">
+    <input type="submit">
+    </form>
+  </body>
+  </html>
